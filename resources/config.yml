@@ -1,0 +1,10 @@
+# Maximum amount of warns a player can get before automatically getting banned.
+# E.g. it will kick on 5th warning if it's set to 5
+max-warns: 5
+
+# Types: "temp" or "perm"
+ban-type: "temp"
+
+# Ban length in seconds, if the ban-type is set to "temp"
+# (by default it's one hour)
+ban-length: 3600

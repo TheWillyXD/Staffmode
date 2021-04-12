@@ -1,0 +1,69 @@
+name: STAFFMODE
+main: Staff\Loader
+version: 1
+api: [2.0.0, 3.0.0-ALPHA5, 2.1.0, 3.0.0]
+author: ["TheWilly","fixed MrGalletaYTPM"]
+commands:
+    punish:
+    usage: "/punish"
+    permission-message: "§cYou do not have permission to use this command!"
+    permission: "st.admin"
+    description: "Command to ban, warn and mute players"
+permissions:
+  st:
+    default: op
+    description: "Ability to use stafftools"
+    children:
+      st.admin:
+        default: op
+        description: "The main menu"
+      st.warn:
+        default: op
+      st.unwarn:
+        default: op
+      st.tempmute:
+        default: op
+      st.permmute:
+        default: op
+      st.unmute:
+        default: op
+      st.permban:
+        default: op
+      st.tempban:
+        default: op
+      st.ipban:
+        default: op
+      st.unban:
+        default: op
+  invsee:
+    default: false
+    description: Grants access to all InvSee permissions.
+    children:
+      invsee.inventory:
+        default: false
+        description: Grants complete access to managing another player's inventory.
+        children:
+          invsee.inventory.view:
+            default: op
+            description: Allows viewing a player's inventory.
+          invsee.inventory.modify:
+            default: op
+            description: Allows modifying a player's inventory.
+            children:
+              invsee.inventory.modify.self:
+                default: true
+                description: Allows modifying your own inventory.
+      invsee.enderinventory:
+        default: false
+        description: Grants complete access to managing another player's ender inventory.
+        children:
+          invsee.enderinventory.view:
+            default: op
+            description: Allows viewing a player's ender inventory.
+          invsee.enderinventory.modify:
+            default: op
+            description: Allows modifying a player's ender inventory.
+            children:
+              invsee.enderinventory.modify.self:
+                default: true
+                description: Allows modifying your own ender inventory.
