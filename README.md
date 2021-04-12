@@ -2,14 +2,14 @@
 
 ### Informacion
 
-```test```
+``test``
 
 ### Comandos
 
-```test```
+``test``
 
 ### Permisos
 
-```test```
+``test``
 
 
